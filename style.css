@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "FlappyBirdy";
+  src: url("assets/fonts/Flappy-Bird.ttf");
+}
+#canvas {
+  background-image: url('assets/img/bg.png');
+  background-size: 100% 100%;
+}
