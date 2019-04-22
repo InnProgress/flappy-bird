@@ -52,7 +52,7 @@ class Data {
   }
   static updateData() {
     gameData.lastScore = gameData.score;
-    if(gameData.score > gameData.highScore) gameData.highScore = score;
+    if(gameData.score > gameData.highScore) gameData.highScore = gameData.score;
     this.saveData();
     this.updateDataForUser();
   }
