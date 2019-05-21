@@ -121,6 +121,7 @@ class Canvas {
       requestAnimationFrame(Canvas.draw);
     }
   static createPipe() {
+      if(document.visibilityState == 'hidden') return;
       gameData.pipes.push({
         x: consts.cvs.width,
         y: -Math.random() * 50
