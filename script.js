@@ -39,10 +39,8 @@ const assets = {
 
 class Data {
   static loadData() {
-    let tempHighScore = localStorage.getItem('highScore');
-    if(tempHighScore) gameData.highScore = tempHighScore;
-    let tempLastScore = localStorage.getItem('lastScore');
-    if(tempLastScore) gameData.lastScore = tempLastScore;
+    gameData.highScore = localStorage.getItem('highScore') || 0;
+    gameData.lastScore = localStorage.getItem('lastScore') || 0;
 
     this.updateDataForUser();
   }
